@@ -1,0 +1,29 @@
+{
+    "name": "super-produccion-addin",
+    "version": "1.0.0",
+    "description": "Office Add-in para PowerPoint - Super Producción",
+    "main": "taskpane.html",
+    "scripts": {
+        "start": "office-addin-debugging start manifest.xml",
+        "stop": "office-addin-debugging stop manifest.xml",
+        "dev": "http-server -p 3000 -S -C %USERPROFILE%\\.office-addin-dev-certs\\localhost.crt -K %USERPROFILE%\\.office-addin-dev-certs\\localhost.key",
+        "dev-certs": "office-addin-dev-certs install",
+        "validate": "office-addin-manifest validate manifest.xml"
+    },
+    "keywords": [
+        "office-add-in",
+        "powerpoint",
+        "super-produccion"
+    ],
+    "author": "Super Imprimibles",
+    "license": "ISC",
+    "devDependencies": {
+        "office-addin-debugging": "^5.0.0",
+        "office-addin-dev-certs": "^1.13.0",
+        "office-addin-manifest": "^1.13.0",
+        "http-server": "^14.1.1"
+    },
+    "dependencies": {
+        "@microsoft/office-js": "^1.1.0"
+    }
+}

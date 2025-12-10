@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>✅ Servidor Funcionando Correctamente</h1>
+    <div class="status">
+        <p><strong>Puerto:</strong> https://localhost:3000</p>
+        <p><strong>Estado:</strong> Activo</p>
+        <p><strong>Hora:</strong> <span id="time"></span></p>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        console.log('✅ Test page loaded successfully');
+    </script>
+</body>
+
+</html>
